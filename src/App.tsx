@@ -1,9 +1,10 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { createTheme } from "@mui/material";
+import { AppBar, createTheme } from "@mui/material";
 import SignIn from "./components/SignIn";
 import { ThemeProvider } from "@emotion/react";
+import ResponsiveAppBar from "./components/ResponsiveAppBar";
 
 function App() {
   // TODO remove, this demo shouldn't need to reset the theme.
@@ -11,7 +12,7 @@ function App() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <SignIn />
+      <ResponsiveAppBar />
     </ThemeProvider>
   );
 }
